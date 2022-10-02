@@ -1,0 +1,41 @@
+###Person 1
+GET http://localhost:6060/personer/1
+Accept: application/json
+
+<> 2022-10-02T180920.200.json
+
+###Persons
+GET http://localhost:6060/personer
+Accept: application/json
+
+<> 2022-10-02T180920.200.json
+
+###DELETE
+DELETE http://localhost:6060/personer/1
+Accept: application/json
+
+<> 2022-10-02T180920.200.json
+
+###POST
+POST http://localhost:6060/personer/
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Iren P anikk",
+  "username": "a101",
+  "fnr": "12345678901",
+  "address": {
+    "street": "Fetsund"
+  }
+}
+
+###PUT
+PUT http://localhost:6060/personer/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Another ",
+  "username": "Another uname"
+}
